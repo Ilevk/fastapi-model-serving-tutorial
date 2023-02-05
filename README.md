@@ -5,6 +5,11 @@
 pip install -r requirements.txt
 ```
 
+## Build Docker
+```
+# docker build -t fast-api-app:{Version} .
+```
+
 ## Run Server
 ```
 # Need mlflow & minio server
