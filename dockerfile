@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3
+FROM python:3.8
 
 WORKDIR /app
 
@@ -11,6 +11,9 @@ COPY . .
 
 RUN pip install -r requirements.txt
 
-CMD uvicorn main:app --host 0.0.0.0 --port 8000
+CMD bash start.sh
 
 EXPOSE 8000
+
+
+# docker build -t fast-api-app:v0.0.1 .
