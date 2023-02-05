@@ -1,0 +1,7 @@
+boto3==1.23.64
+fastapi==0.98.1
+mlflow==2.1.1
+pydantic==1.10.4
+scikit-learn==1.1.1
+uvicorn==0.20.0
+xgboost==1.5.2
