@@ -14,8 +14,8 @@ def startup():
 
 @router.post("/predict",
              response_model=ResponseModel)
-def predict(item: RequestModel):
-    result = router.model.predict(pd.DataFrame([item.dict()]))
+def predict(request: RequestModel):
+    result = router.model.predict(pd.DataFrame([request.dict()]))
     
     return ResponseModel(status_code=200,
                          data=ApartmentModel(transaction_real_price=result))
